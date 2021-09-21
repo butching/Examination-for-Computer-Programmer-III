@@ -30,7 +30,7 @@
                 <th scope="col">{{ $d->LastName }}</th>
                 <th scope="col">{{ $d->FirstName }}</th>
                 <th scope="col">{{ $d->Age }}</th>
-                <th scope="col">{{ $d->BirthDate->format('d/m/Y'); }}</th>
+                <th scope="col">{{ $d->BirthDate->format('l, F d, Y'); }}</th>
                 <th scope="col">{{ $d->sex?->name }}</th>
                 <th scope="col">{{ $d->region?->region_name }}</th>
                 <th scope="col"><a href="volunteer/edit/{{ $d->VolunteerId }}">Edit</a> | <a href="volunteer/delete/{{ $d->VolunteerId }}">Delete</a></th>
